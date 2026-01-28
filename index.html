@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后室迷宫 - 下载</title>
+    <link rel="icon" href="icon/icon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #0078d4, #4fc3f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+        
+        .game-description {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .game-description h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4fc3f7;
+        }
+        
+        .game-description p {
+            margin-bottom: 15px;
+            color: #d0d0d0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .download-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, #0078d4, #0063b1);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 120, 212, 0.3);
+            text-decoration: none;
+            margin: 0 auto;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 120, 212, 0.4);
+            background: linear-gradient(90deg, #0063b1, #005a9e);
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .download-btn i {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .file-info {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>后室迷宫</h1>
+            <div class="subtitle">探索无尽的黄色房间，寻找出路</div>
+        </header>
+        
+        <section class="game-description">
+            <h2>游戏介绍</h2>
+            <p>《后室迷宫》是一款基于网络怪谈"后室"概念的第一人称恐怖探索游戏。玩家将发现自己被困在一个看似无限的黄色迷宫中，只有单调的荧光灯嗡嗡声和潮湿的地毯气味作伴。</p>
+            <p>游戏采用先进的图形技术，营造出令人不安的氛围和沉浸式体验。你需要探索这个超现实空间，寻找线索和资源，同时避开潜伏在角落的危险实体。</p>
+            <p>每个房间都可能隐藏着秘密，每个转角都可能带来惊喜或恐惧。你能找到逃离这个无尽迷宫的方法吗？</p>
+        </section>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🌌</div>
+                <h3>沉浸式环境</h3>
+                <p>精心设计的视觉和声音效果，营造真实的恐怖氛围</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🧩</div>
+                <h3>非线性探索</h3>
+                <p>自由探索迷宫，发现隐藏的区域和秘密</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">👾</div>
+                <h3>独特实体</h3>
+                <p>面对各种超自然实体，每种都有独特的行为模式</p>
+            </div>
+        </div>
+        
+        <section class="download-section">
+            <a href="https://raw.githubusercontent.com/MCfechuan/Backroom-Labyrinth/refs/heads/master/Backroom%20Labyrinth_Decompress.exe" class="download-btn">
+                <i>⬇️</i> 下载游戏
+            </a>
+            <div class="file-info">文件大小: 约 350MB | 版本: 1.0.2</div>
+        </section>
+        
+        <footer>
+            <p>© 2026 后室迷宫 | 所有权利保留</p>
+        </footer>
+    </div>
+</body>
+</html>
